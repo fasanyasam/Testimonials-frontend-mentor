@@ -1,0 +1,147 @@
+:root{
+    margin: auto;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    --violet--: hsl(263, 55%, 52%);
+    --neutral--: hsla(217, 19%, 35%) ;
+    --dark-color--: hsl(219, 29%, 14%);
+    --white--:hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width:1440px){
+
+    body{
+        padding: 100px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 85% 25% ;
+        grid-gap: 30px;
+        
+    }
+    
+    .section-one{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-gap: 30px;
+    }
+    .section-two{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 30px;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 70px auto ;
+        text-align: left;
+    }
+   
+    img{
+        border-radius: 50%;
+        border: solid 4px purple;
+    }
+    blockquote{
+        margin-left: -3px;
+        font-weight: 600;
+        font-size: 1.7em;
+    }
+    p, span{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    span{
+        opacity: 50%;
+    }
+    p{
+        opacity: 70%;
+    }
+    .large{
+        border-radius: 10px;
+        padding:50px 50px 0 50px;
+        
+    }
+    .large p, .large blockquote{
+        line-height: 2;
+    }
+    .small{
+        border-radius: 10px;
+        padding: 50px
+    }
+    #daniel{
+        background-color: var(--violet--);
+        color: var(--white--);
+    }
+    #jonathan{
+        background-color: var(--neutral--);
+        color: var(--white--);
+    }
+    #jeanette{
+        background-color: var(--white--);
+        color: var(--neutral--);
+    }
+    
+    #patrick{
+        background-color: var(--dark-color--);
+        color: var(--white--);
+    }
+    
+    .small, .large, aside{
+        box-shadow:gray 4px 4px 10px
+    }
+    aside{
+        background-color:var(--white--);
+        color: var(--neutral--);
+        margin-left: 30px;
+        padding: 50px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:375px){
+    body{
+        padding: 50px 20px;
+        width: 87%;
+        display: block;
+
+    }
+   
+    .section-one, .section-two{
+        display: block;
+    }
+
+    .large{
+        padding:30px;
+        margin-bottom: 30px;
+        
+    }
+    .small{
+        border-radius: 10px;
+        padding: 20px
+    }
+    aside{
+        padding: 30px;
+    }
+    #jeanette, #patrick {
+        margin-top: 60px;
+    }
+    blockquote{
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    p, span{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}  
